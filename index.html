@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!--Tarjeta de los productos-->
+    <div class="container">
+      <h1>Productos</h1>
+      <hr />
+    <!--este div me es donde va a llegar el template-->
+      <div class="row" id="items"></div>
+    </div>
+    <!--template nos sireve como palntilla para realizar la tarjeta-->
+    <template id="template-card">
+      <div class="col-12 mb-2 col-md-4">
+        <img src="" alt="" class="card-img-top" />
+
+        <h2>Titulo</h2>
+        <h4>Descipcion</h4>
+        <p>precio</p>
+        <button class="btn btn-dark">Comprar</button>
+      </div>
+    </template>
+
+    <script src="assets/script.js"></script>
+  </body>
+</html>
